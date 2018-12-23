@@ -3,18 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavComponent } from './nav/nav.component';
-import { TopNavComponent } from './top-nav/top-nav.component';
+
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { UiModule } from './ui/ui.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavComponent,
-    TopNavComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    UiModule
   ],
   providers: [],
   bootstrap: [AppComponent]
